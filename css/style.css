@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.form-container {
+    z-index: 2;
+    /* display: none; */
+    border-radius: 0 300px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    animation: login 1s ease-in-out;
+}
+@keyframes login {
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.form{
+    margin: 0 auto;
+    max-width: 295px;
+}
+.logo{
+    animation: logo 1.2s ease-in-out;
+}
+@keyframes logo {
+    from{
+        transform: translateY(70px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.logo img {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    background-color: white;
+    width: 80%;
+    max-width: 400px;
+    padding: 40px 30px 40px 30px;
+    text-align: center;
+    border-top: 3px solid #830001;
+    border-bottom: none;
+    animation: form 1.2s ease-in-out;
+}
+@keyframes form {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+label{
+    font-weight: 500;
+    color: #656262;
+    width: 100%;
+}
+#modulo{
+    border: none;
+    width: 100%;
+    padding: 13px 13px 13px 0;
+    border-bottom: 2px solid #830001;
+    /* border: 1px solid #006492; */
+    /* border-radius: 25px; */
+}
+.login-form h2 {
+    font-weight: 700;
+    font-family: "Poppins";
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #830001;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+    text-align: left;
+}
+.input-group input {
+    border: none;
+    margin-top: 5px;
+    width: 100%;
+    padding: 13px 13px 13px 0;
+    border-bottom: 2px solid #830001;
+    font-size: 16px;
+    outline: none;
+}
+
+.password-wrapper {
+    position: relative;
+    /* display: flex;
+    align-items: center; */
+}
+
+.password-wrapper input {
+    width: 100%;
+}
+
+.password-wrapper i {
+    position: absolute;
+    top: 71%;
+    right: 16px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #830001;
+    transition: color 0.3s;
+}
+
+button {
+    padding: 13px 25px;
+    background-color: #830001;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+/* .background {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;    
+} */
+
+/* .background img {
+    right: 0;
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    object-fit: cover;
+} */
+.img_fondo {
+    right: 0;
+    position: absolute;
+    width: 100%;
+    /* max-width: 2000px; */
+    height: 100%;
+    object-fit: cover;
+}
+/* boton 4k */
+.button_interactivo {
+    margin: 40px auto 0 auto;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 1.2em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+@media screen and (max-width: 1280px){
+    .logo{
+        overflow: hidden;
+        max-height: 113px;
+    }
+    label{
+        font-size: 13px;
+    }
+    .logo img{
+        width: 300px;
+    }
+    .form-container{
+        border-radius: 0 200px 0 0;
+        width: 40%;
+    }
+    .login-form{
+        max-width: 300px;
+        padding: 30px 20px;
+    }
+    .login-form h2{
+        font-size: 28px;
+    }
+    .footer h2{
+        font-size: 11px;
+    }
+    .img_fondo{
+        width: 84%;
+    }
+}
